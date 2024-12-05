@@ -1,0 +1,290 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'vibe';
+    src: url('../fonts/vibes.ttf');
+}
+
+:root {
+    --cor1:#CF3474;
+    --cor2:#A6446D ;
+    --cor3:#F91473 ;
+    --cor4:#7A475C ;
+    --cor5:#4F3B44 ;
+    --cor6:#33282F;
+
+
+    --font1:'vibe', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; ;
+}
+
+html {
+    height: fit-content;
+}
+
+body {
+    background-image: url('../img/fundo6.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    
+}
+
+header {
+    background-color: black;
+    
+}
+
+header > h1 {
+    font-family: var(--font1);
+    color: #F91473;
+    font-size: 3em;
+    padding: 10px;
+    margin: 0px;
+}
+
+h1 > span {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+
+
+
+
+nav {
+    background-color: #f9147391;
+    text-align: center;
+    padding: 5px;
+    
+}
+
+a {
+    text-decoration: none;
+    margin: 0px 10px;
+    color: white;
+
+    
+}
+
+nav > a:hover {
+    color: #F91473;
+
+}
+
+
+
+.perfil {
+    
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+
+}
+
+.perfil > img {
+    width: 25vw;
+    margin: 20% 0px;
+    flex: 1;
+    border: 3px solid var(--cor3);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    
+    
+    
+}
+
+.sobre {
+    color: white;
+    width: 220px;
+    flex: 2;
+    padding: 0px 10px;
+    align-self: center;
+}
+
+.sobre > h2 {
+    color: #F91473;
+}
+
+.recent {
+    
+    width: 95%;
+    margin: auto;
+}
+
+.recent > h2 {
+    color: #F91473;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.801);
+    border-radius: 20px;
+} 
+
+.groupworks {
+    width: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.groupworks > img {
+    width: 30%;
+    height: 30%;
+    border: 2px solid var(--cor3);
+    border-radius: 50%;
+    margin: 2px;
+    
+
+}
+
+.agende {
+    
+    background-color: #33282F;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    height: 250px;
+    
+    
+}
+
+.agende > h2 {
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    
+}
+
+.agende > p {
+    color: #CF3474;
+}
+
+.agende > a {
+    background-color: #F91473;
+    padding: 10px;
+    position: relative;
+    top: 20px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.agende > a:hover {
+    background-color: #A6446D;
+    animation: headShake 1s;
+}
+
+.adress {
+    background-color: transparent;
+    text-align: center;
+}
+
+.adress > i {
+    color: #F91473;
+    font-size: 2em;
+}
+
+.adress > p {
+    color: white;
+}
+
+.redes {
+    
+    background-color:black;
+    border: 2px solid #F91473;
+    border-right: none;
+    height: 250px;
+    width: 15px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 20px 0px 0px 20px;
+    transition: 1s;
+    cursor: pointer;
+    
+}
+
+.redes:hover  {
+    width: 70px;
+}
+
+.redes > i {
+    font-size: 3em;
+    display: none;
+    
+}
+
+.redes:hover > i {
+    display: block;
+}
+
+.redes > i:hover {
+    color: #4F3B44;
+}
+
+.insta {
+    color: rgb(250, 47, 101);
+
+}
+
+.face {
+    color: rgb(57, 57, 247);
+}
+
+.whats {
+    color: rgb(65, 239, 111);
+}
+
+
+.espaço1 {
+    height: 100px;
+    
+}
+
+@media screen and (min-Width:768px) {
+
+    .espaço1 {
+        display: none;
+    }
+
+    .perfil {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        margin: 150px auto;
+        
+    }
+
+    .perfil > img {
+        float: none;
+        flex: 1;
+        margin: 0px;
+        
+
+    }
+
+    .sobre {
+        flex: 2;
+        float: none;
+        position: relative;
+        align-self: center;
+        
+
+        width: auto;
+        margin: 0px;
+        height: fit-content;
+        padding-left: 20px;
+        
+    }
+
+    .recent {
+        width: 80%;
+    }
+}
